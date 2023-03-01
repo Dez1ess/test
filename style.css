@@ -119,21 +119,21 @@ header {
   padding-top: 4rem;
   display: flex;
   align-items: center;
-  flex-flow: column wrap;
+  flex-direction: column;
   background-image: url('./img/bg-vectors.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
-
 .hero-img img {
-  width: 400px;
+  width: 350px;
 }
 
 .hero-info h1 {
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 5rem;
   margin: 4rem 0;
@@ -141,11 +141,13 @@ header {
 }
 
 .hero-info a, .about a, .services-btn a, .join button, .footer-btn  {
+  width: 100%;
   display: inline-block;
-  padding: 1.8rem 10.9rem;
+  padding: 1.8rem;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.7rem;
+  text-align: center;
   color: #343045;
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   border-radius: 4rem;
@@ -156,18 +158,20 @@ span:nth-of-type(2) {
 }
 
 
-
-
 .contact-item {
-  width: 47rem;
-  height: 9rem;
+  width: 40rem;
+  height: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
   background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
   border-radius: 9rem;
   padding: 2rem 1rem;
+}
+
+.contact-img img {
+  width: 30px;
 }
 
 
@@ -203,7 +207,7 @@ span:nth-of-type(2) {
 }
 
 .contact-info p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.7rem;
   margin-left: 1.4rem;
@@ -251,7 +255,7 @@ span:nth-of-type(2) {
 }
 
 .about-img img {
-  width: 400px;
+  width: 350px;
 }
 
 .about-btn {
@@ -280,7 +284,7 @@ span:nth-of-type(2) {
   justify-content: center;
   align-items: center;
   background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
-  width: 370px;
+  width: 350px;
   height: 600px;
   border-radius: 4rem;
   margin-top: 2.5rem;
@@ -690,3 +694,4 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 
 /* EFFECTS */
+
